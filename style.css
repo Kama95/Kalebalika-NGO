@@ -1,6 +1,26 @@
-.header {display: flex;
+.header 
+{display: flex;
 justify-content: space-between;
 background-color: #1F2937;}
 
-ul{display: flex;
-gap:30px;}
+ul
+{display: flex;
+
+gap:30px;
+list-style: none;}
+
+a 
+{
+text-decoration: none;
+color: #e5e7eb;}
+
+.logo{
+    padding: 30px;
+    display: flex;
+
+    align-items: center;
+    color: #f9faf8;
+    text-align: center;
+}
+
+.links {padding: 30px;}
