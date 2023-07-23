@@ -1,2 +1,2 @@
-# Kalebalika-NGO
-A landing page of an NGO website.
+# (Odin Project) - Kalebalika-NGO
+A landing page for an NGO website. for the Odin Project.
