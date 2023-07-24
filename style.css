@@ -31,6 +31,9 @@ color: #e5e7eb;}
     color: #f9faf8;
     text-align: center;
 }
+.logo img {
+    max-width: 100px;
+}
 
 
 .links {padding: 30px;}
@@ -81,6 +84,8 @@ align-items: center;}
     display: flex;
     justify-content: center;
     gap:30px;
+    flex: 1;
+    flex-wrap: wrap;
 }
 .image1{
     display: flex;
@@ -88,5 +93,22 @@ align-items: center;}
     border-width: 5px;
     border-style: solid;
     border-color: rgb(236, 87, 87);
-    wid
+    max-width: 400px;
+    height: auto;
 }
+.funFact{background-color: #e5e7eb;
+    display: flex;
+justify-content: center;
+margin-top: 20px;
+font-size: 28px;
+font-style: italic;
+flex-wrap: wrap;
+align-items: center;
+padding: 20px;
+margin-bottom: 20px;
+}
+.footer {background-color: #1F2937;
+display: flex;
+justify-content: center;
+gap:50px;
+;}
