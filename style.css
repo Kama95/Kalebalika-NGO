@@ -6,7 +6,9 @@ body{
 .header 
 {display: flex;
 justify-content: space-between;
-background-color: #1F2937;}
+background-color:#e5e7eb;
+margin-bottom: 10px;
+border-bottom: 10px solid rgb(236, 87, 87);}
 
 .header2{background-color: #1F2937;
 display: flex;
@@ -21,7 +23,7 @@ list-style: none;}
 a 
 {
 text-decoration: none;
-color: #e5e7eb;}
+color:#1F2937;}
 
 .logo{
     padding: 30px;
@@ -107,12 +109,16 @@ align-items: center;
 padding: 20px;
 margin-bottom: 20px;
 }
+.footerContainer {display: flex;
+justify-content: center;}
+
 .footer {background-color: #1F2937;
 display: flex;
 justify-content: center;
 gap:100px;
-padding: 10;
-padding-bottom: 100px;
+padding: 50px;
+border-radius: 10px;
+width: 800px;
 }
  .text6 {font-size: 21px;
 color: #f9faf8;
