@@ -8,9 +8,11 @@ body{
 justify-content: space-between;
 background-color:#e5e7eb;
 margin-bottom: 10px;
-border-bottom: 10px solid rgb(236, 87, 87);}
+border-bottom: 10px solid  #edad06;}
 
-.header2{background-color: #1F2937;
+.logoContainer {display: flex;}
+
+.header2{background-color: rgb(103,185,50);
 display: flex;
 justify-content: center;
 padding-bottom: 170px;}
@@ -61,7 +63,7 @@ color: #f9faf8;}
 color: #e5e7eb;}
 
 button{border-radius: 1px;
-background-color: rgb(236, 87, 87);
+background-color: #edad06;
 padding: 8px;
 width: 160px;
 font-size: 21px;
