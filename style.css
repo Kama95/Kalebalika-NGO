@@ -38,13 +38,18 @@ color:#1f2205;}
 .logo img {
     max-width: 100px;
 }
+.img {display: flex;
+flex: 1;
+flex-wrap: nowrap;}
 
 
 .links {padding: 30px;}
 
 .Info{display: flex;
 padding: 30px;
-gap:50px;
+gap:100px;
+padding-left: 50px;
+padding-top: 50px;
 }
 
 .Info2{display: flex;
@@ -53,17 +58,20 @@ justify-content: center;
 align-items: center;
 gap:10px;
 flex-wrap: wrap;
-flex: 1;}
+flex: 1;
+padding-left: 50px;}
 
  h1{font-size: 48px;
 font-weight:bolder;
 color: #1f2205;}
-.heading h1 , .heading2 h1{
-    color: #e5e7eb
-}
 
-.text {font-size: 18px;
+.heading h1 , .heading2 h1{
+    color: #e5e7eb;
+margin-bottom: -25px;}
+
+.text {font-size: 23px;
 color: #e5e7eb;}
+p {text-align: center;}
 
 .button a{ color:#e5e7eb}
 
