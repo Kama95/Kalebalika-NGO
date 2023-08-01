@@ -1,3 +1,5 @@
+*{padding: 0;
+margin: 0;}
 body{
     justify-content: center;
     font-family: Roboto sans-serif;
@@ -85,7 +87,7 @@ color: #e5e7eb;}
 
 img {display: flex;
 flex:1;
-max-width :700px ;
+max-width :100% ;
 height: auto;
 border-radius: 12px;}
 
@@ -166,3 +168,16 @@ justify-content: center;}
 .text7 p {color:#f9faf8;
 font-size: 20px;}
 
+
+@media (max-width:768px){
+    .header , .logoContainer, .header2 , .footer ,.Info{flex-direction: column;
+    align-items: center;}
+
+    .logoContainer{flex-direction: column;
+    align-items: center;}
+
+    img {max-width: 100%;
+    height: auto;}
+    
+}
+    
