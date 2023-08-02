@@ -68,8 +68,7 @@ font-weight:bolder;
 color: #1f2205;}
 
 .heading h1 , .heading2 h1{
-    color: #e5e7eb;
-margin-bottom: -25px;}
+    color: #e5e7eb;}
 
 .text {font-size: 23px;
 color: #e5e7eb;}
@@ -179,5 +178,14 @@ font-size: 20px;}
     img {max-width: 100%;
     height: auto;}
     
+    .name { 
+        margin: -15px 0px 0px 0px;
+    }
+    .heading{max-width: 100%;}
+
+    h1 {text-align: center;}
+    .Info {padding: 30px 0px 0px 0px;}
+    .Info2{padding-left: 0;
+    gap: 20px;}
 }
     
