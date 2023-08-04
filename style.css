@@ -3,6 +3,7 @@ margin: 0;}
 body{
     justify-content: center;
     font-family: Roboto sans-serif;
+    overflow-x: hidden;
 }
 
 .header 
@@ -12,7 +13,8 @@ background-color: #e5e7eb;
 border-bottom: 10px solid #1f6521;
 position: sticky;
 z-index: 999;
-top: 0;}
+top: 0;
+width: 100%;}
 
 .logoContainer {display: flex;}
 
@@ -209,7 +211,7 @@ font-size: 20px;}
     
 
     /*carousel*/
-    
+
     .carousel{
         overflow: hidden;
         width: 100vw;
