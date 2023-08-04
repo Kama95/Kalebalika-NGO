@@ -9,7 +9,10 @@ body{
 {display: flex;
 justify-content: space-between;
 background-color: #e5e7eb;
-border-bottom: 10px solid #1f6521;}
+border-bottom: 10px solid #1f6521;
+position: sticky;
+z-index: 999;
+top: 0;}
 
 .logoContainer {display: flex;}
 
