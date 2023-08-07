@@ -307,5 +307,11 @@ font-size: 20px;}
     .Info {padding: 30px 0px 0px 0px;}
     .Info2{padding-left: 0;
     gap: 20px;}
-}
+
+   .header .links {
+        position: sticky;
+z-index: 999;
+top: 0;
+width: 100%;}
+    }
     
