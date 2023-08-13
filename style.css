@@ -81,7 +81,8 @@ color: #1f2205;}
 
 .text {font-size: 23px;
 color: #e5e7eb;
-padding: 20px;}
+padding: 20px;
+text-shadow: 2px 1px black;}
 
 p {text-align: center;}
 
@@ -89,11 +90,10 @@ p {text-align: center;}
 
 button{border-radius: 1px;
 background-color: #53900f;
-padding: 8px;
-width: 160px;
-font-size: 21px;
-font-weight: bold;
-color: #e5e7eb;}
+padding: 14px 28px;
+font-size: 19px;
+color: #e5e7eb;
+text-shadow: 1px 1px white;}
 
 img {display: flex;
 flex:1;
@@ -101,26 +101,27 @@ max-width :100% ;
 height: auto;
 border-radius: 12px;}
 
-.ourWork{display: flex;
+.ourWork {display: flex;
 flex-direction: column;
-align-items: center;}
+align-items: center;
+margin:50px 15px 0px 15px;
+padding: 5px;
+gap: 30px;}
 
 .text3 h1{
     color:#1F2937;
     font-size: 36px;
+    margin-bottom: 30px;
 }
 
 .imgCards{
     display: flex;
     justify-content: center;
-    gap:30px;
-    flex: 1;
-    flex-wrap: wrap;
+gap:20px;
 }
 .imgCard {
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
 .caption {
     text-align: center;
@@ -128,11 +129,8 @@ align-items: center;}
 .image1{
     display: flex;
     flex-direction: column;
-    border-width: 5px;
-    border-style: solid;
     border-color:#1f6521;
-    max-width: 400px;
-    height: auto;
+
 }
 .funFact{background-color: #e5e7eb;
     display: flex;
@@ -292,7 +290,7 @@ justify-content: center;}
 
 
 @media (max-width:768px){
-    .header , .logoContainer, .header2 , .footer ,.Info{flex-direction: column;
+    .header , .logoContainer, .ourWork, .imgCards,.footer ,.Info{flex-direction: column;
     align-items: center;}
 
     .logoContainer{flex-direction: column;
@@ -325,6 +323,8 @@ white-space: nowrap;
 gap: 10px;}
 
 .logoContainer .name{display: none;}
+
+.imgCards{;}
 
     }
     
