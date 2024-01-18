@@ -9,6 +9,14 @@ body, button {font-family: 'Poppins', sans-serif}
 margin: 0;
 box-sizing: border-box;}
 
+.fullContainer{
+    width: 100%;
+}
+.container {
+    margin: auto;
+    width: 1140px;
+}
+
 
  /*
 body{
