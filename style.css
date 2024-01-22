@@ -180,8 +180,24 @@ margin-top: 15px;}
     text-decoration: none;
     transition: 0.3s;
     color: #444;
-
 }
+
+#AbtUsSection .cards > div button{
+    border: 1px solid var(--theme);
+    outline: none;
+    padding: 7px 15px;
+    margin-top: 15px;
+    font-size: 12px;
+    border-radius: 3%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#AbtUsSection .cards > div:hover button {
+    background-color: var(--theme);
+    color: #fff;
+    
+}
+
 /*
 
 .logoContainer {display: flex;}
