@@ -17,6 +17,31 @@ p {
     line-height: 26px;
 }
 
+.SectionTitle {
+    width: 300px;
+    text-align: center;
+    border-bottom: 3px solid var(--theme);
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 0 auto 50px;
+    position: relative;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+.SectionTitle::after{
+    display: inline-block;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: var(--theme);
+    position: absolute;
+    left: calc(50% - 10px);
+    right: calc(75% - 7px);
+    transform: rotate(45deg) translate(175%, 175%);
+    border: 3px solid #fff;
+}
+
+
 .fullContainer{
     width: 100%;
 }
