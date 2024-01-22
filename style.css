@@ -166,6 +166,15 @@ height: 245px;
     border: 1px solid #ccc;
 }   
 
+#AbtUsSection .cards > div .title{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#AbtUsSection .cards > div p
+{font-size: 14px;
+margin-top: 15px;}
 /*
 
 .logoContainer {display: flex;}
