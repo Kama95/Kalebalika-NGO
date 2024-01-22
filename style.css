@@ -41,6 +41,10 @@ p {
     border: 3px solid #fff;
 }
 
+section{
+    padding: 100px 0;
+    position: relative;
+}
 
 .fullContainer{
     width: 100%;
