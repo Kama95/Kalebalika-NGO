@@ -175,6 +175,13 @@ height: 245px;
 #AbtUsSection .cards > div p
 {font-size: 14px;
 margin-top: 15px;}
+
+#AbtUsSection .cards > div button a {
+    text-decoration: none;
+    transition: 0.3s;
+    color: #444;
+
+}
 /*
 
 .logoContainer {display: flex;}
