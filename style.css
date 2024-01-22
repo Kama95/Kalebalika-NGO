@@ -146,7 +146,25 @@ header nav ul li a:hover{
     transition: 0.3s;
     color: #fff;
 }
-.banner  
+#AbtUsSection .cards{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin-top: 50px;
+position: relative;
+height: 245px;
+}
+
+#AbtUsSection .cards > div {
+    width: 350px;
+    background-color: var(--gray);
+    padding: 35px;
+    color: #444;
+    text-align: center;
+    border-radius: 15px;
+    height: 215px;
+    border: 1px solid #ccc;
+}   
 
 /*
 
