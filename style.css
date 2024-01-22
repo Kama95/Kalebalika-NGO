@@ -99,6 +99,26 @@ header nav ul li a:hover{
     text-shadow: 0 0 2px #000;
     margin-top: 10px;
 }
+
+.banner button {
+    background-color: var(--theme);
+    color: #fff;
+    border: 0;
+    outline: none;
+    padding: 10px 15px;
+    margin-top: 20px;
+    font-size: 13px;
+    border-radius: 3px;
+    font-weight: 400;
+}
+
+.banner button a {
+    text-decoration: none;
+    transition: 0.3s;
+    color: #fff;
+}
+.banner  
+
 /*
 
 .logoContainer {display: flex;}
