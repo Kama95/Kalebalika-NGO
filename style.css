@@ -164,7 +164,16 @@ height: 245px;
     border-radius: 15px;
     height: 215px;
     border: 1px solid #ccc;
-}   
+    transition: 0.3s;
+}  
+
+#AbtUsSection .cards > div:hover{
+    width: 400px;
+    margin-top: -20px;
+    border-color: var(--theme);
+    padding: 55px;
+    height: auto;
+}
 
 #AbtUsSection .cards > div .title{
     font-size: 18px;
@@ -194,9 +203,9 @@ margin-top: 15px;}
 }
 #AbtUsSection .cards > div:hover button {
     background-color: var(--theme);
-    color: #fff;
-    
+    color: #fff;   
 }
+
 
 /*
 
