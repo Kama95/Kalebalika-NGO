@@ -291,6 +291,9 @@ margin-top: 15px;}
     position:absolute;
     left: 50%;
     background-color: var(--theme);
+    color: #fff;
+    transform: translate(-50%);
+    bottom: -15px;
 }
 /*
 
