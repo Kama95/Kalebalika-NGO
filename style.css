@@ -278,6 +278,12 @@ margin-top: 15px;}
     font-weight: 600;
     color: #444;
 }
+.OurWork .boxContainer .Box .donationCount {
+    font-size: 13px;
+    font-weight: 600;
+    color: #444;
+    margin-top: 10px;
+}
 /*
 
 .logoContainer {display: flex;}
