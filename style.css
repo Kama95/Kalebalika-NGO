@@ -300,6 +300,12 @@ margin-top: 15px;}
     outline: none;
     cursor: pointer;
 }
+
+
+.Gallery .galleryContainer {
+    column-count: 4;
+    column-gap: 20px;
+}
 /*
 
 .logoContainer {display: flex;}
