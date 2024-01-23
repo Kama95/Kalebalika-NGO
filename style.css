@@ -227,6 +227,10 @@ margin-top: 15px;}
     margin-bottom: 15px;
 }
 
+.OurWork .boxContainer .Box .ImageCard {
+    width: 100%;
+    height: 300px;
+}
 /*
 
 .logoContainer {display: flex;}
