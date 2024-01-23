@@ -306,6 +306,19 @@ margin-top: 15px;}
     column-count: 4;
     column-gap: 20px;
 }
+
+.Gallery .galleryContainer .item {
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
 /*
 
 .logoContainer {display: flex;}
