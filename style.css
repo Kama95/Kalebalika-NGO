@@ -287,6 +287,11 @@ margin-top: 15px;}
 .OurWork .boxContainer .Box .donationCount span {
     color: var(--theme);
 }
+.OurWork .boxContainer .Box button{
+    position:absolute;
+    left: 50%;
+    background-color: var(--theme);
+}
 /*
 
 .logoContainer {display: flex;}
