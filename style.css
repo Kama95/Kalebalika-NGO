@@ -284,6 +284,9 @@ margin-top: 15px;}
     color: #444;
     margin-top: 10px;
 }
+.OurWork .boxContainer .Box .donationCount span {
+    color: var(--theme);
+}
 /*
 
 .logoContainer {display: flex;}
