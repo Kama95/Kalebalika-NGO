@@ -294,6 +294,11 @@ margin-top: 15px;}
     color: #fff;
     transform: translate(-50%);
     bottom: -15px;
+    border-radius: 60px;
+    padding: 7px 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
 }
 /*
 
