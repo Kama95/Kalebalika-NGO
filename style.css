@@ -251,9 +251,14 @@ margin-top: 15px;}
 
 .OurWork .boxContainer .Box:nth-child(1) .ImageCard,
 .OurWork .boxContainer .Box:nth-child(1).ImageCard:after{
-    background-image: url(Media/Education.jpg);
+    background-image: url(Media/Education\ 3.jpg);
+
 }
 
+
+.OurWork .boxContainer .Box:nth-child(2) .ImageCard,
+.OurWork .boxContainer .Box:nth-child(2).ImageCard:after{
+    background-image: url(Media/sustainable-development-1-300x200.jpg.webp);
 /*
 
 .logoContainer {display: flex;}
