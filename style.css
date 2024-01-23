@@ -258,7 +258,16 @@ margin-top: 15px;}
 
 .OurWork .boxContainer .Box:nth-child(2) .ImageCard,
 .OurWork .boxContainer .Box:nth-child(2).ImageCard:after{
+    background-image: url(Media/PlantingTrees.jpg);
+}
+.OurWork .boxContainer .Box:nth-child(3) .ImageCard,
+.OurWork .boxContainer .Box:nth-child(3).ImageCard:after{
     background-image: url(Media/sustainable-development-1-300x200.jpg.webp);
+}
+.OurWork .boxContainer .Box:nth-child(4) .ImageCard,
+.OurWork .boxContainer .Box:nth-child(4).ImageCard:after{
+    background-image: url(Media/climateChange.jpg);
+}
 /*
 
 .logoContainer {display: flex;}
