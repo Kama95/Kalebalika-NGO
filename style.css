@@ -234,6 +234,7 @@ margin-top: 15px;}
     background-size: cover;
     position: relative;
     overflow: hidden;
+    border-radius: 5px 5px 0 0;
 }
 /*
 
