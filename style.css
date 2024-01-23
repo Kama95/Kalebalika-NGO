@@ -303,7 +303,7 @@ margin-top: 15px;}
 
 
 .Gallery .galleryContainer {
-    column-count: 4;
+    column-count: 3;
     column-gap: 20px;
 }
 
@@ -312,8 +312,22 @@ margin-top: 15px;}
     margin-bottom: 20px;
     overflow: hidden;
 }
+.Gallery .galleryContainer img{
+    width: 100%;
+    display: block;
+}
 
-
+.Gallery .galleryContainer .title {
+    position: absolute;
+    background-color: var(--gray);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    opacity: 0;
+    z-index: 1;
+}
 
 
 
