@@ -338,7 +338,10 @@ margin-top: 15px;}
     transform: scale(1.4);
 }
 
-
+.joinUs {
+    background-image: url(Media/Red-Painted-Wooden-Door-Texture-patternpictures-1813.jpg);
+    color: #fff;
+}
 /*
 
 .logoContainer {display: flex;}
