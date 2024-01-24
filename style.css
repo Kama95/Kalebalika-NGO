@@ -315,9 +315,10 @@ margin-top: 15px;}
 .Gallery .galleryContainer img{
     width: 100%;
     display: block;
+    transition: 0.4s;
 }
 
-.Gallery .galleryContainer .title {
+.Gallery .galleryContainer .item .title {
     position: absolute;
     background-color: var(--gray);
     padding: 5px;
@@ -327,10 +328,15 @@ margin-top: 15px;}
     font-weight: bold;
     opacity: 0;
     z-index: 1;
+    transition: 0.4s;
 }
 
-
-
+.Gallery .galleryContainer .item:hover .title{
+    opacity: 1;
+}
+.Gallery .galleryContainer .item:hover img{
+    transform: scale(1.4);
+}
 
 
 /*
