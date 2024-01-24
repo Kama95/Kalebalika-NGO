@@ -370,6 +370,11 @@ footer{
     font-size: 14px;
 }
 
+footer .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
 
 
 
