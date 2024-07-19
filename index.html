@@ -33,6 +33,25 @@
               <button><a href="###"> Contribute Here </a> </button>
         </div>
     </div>
+
+    <div class="modal" id="donationModal"> 
+        <div class="modelContent">
+            <span class="closeButton" id="closeModel">&times;</span>
+            <div class="donationFormContainer">
+                <h1>Donate to Our cause</h1>
+                <form id="donationForm">
+                    <label for="donationAmount">Donation Amount:</label>
+                    <input type="number" class="donationAmount" name="donationAmount" min="1" required>
+                    <label for="donorName">Your Name:</label>
+                    <input type="input" name="donorName" name="donorName" required>
+                    <label for="email">Your Email</label>
+                    <input type="email" class="email" name="email" required>
+                    <button class="submitButton">Submit</button>
+                </form>
+                <div class="confirmationMessage"></div>
+            </div>
+        </div>
+    </div>
     <section class="fullContainer" id="AbtUsSection">
         
         <div class="container">
