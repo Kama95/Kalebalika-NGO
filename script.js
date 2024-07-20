@@ -45,8 +45,9 @@ donationForm.addEventListener('submit', function(event){
 
     //validate form
     if (donationAmount>0 && donorName && donorEmail){
-      confirmationMessage.textContent = `Thank you ${donorName} for your generous donation`
+      confirmationMessage.textContent = `Thank you ${donorName} for your generous donation`;
       donationForm.reset();
+
     } else{
         confirmationMessage.textContent=`Please fill in all content correctly`
     }
