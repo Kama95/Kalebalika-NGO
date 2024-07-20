@@ -161,12 +161,12 @@ header nav ul li a:hover{
     border-radius: 4px;
 }
 .submitButton:hover{
-    background-color:;
     color: #424242;
     cursor:pointer;
 }
 
 .modal{
+    display: none;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -176,8 +176,7 @@ header nav ul li a:hover{
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
     justify-content: center;
-    align-items: center;
-    display: flex;
+    align-items: center;  
 }
 
 .modalContent{
