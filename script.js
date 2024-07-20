@@ -15,10 +15,11 @@ document.addEventListener('DOMContentLoaded', function(){
 
 function closeModal(){
     let donateModal = document.getElementById('donationModal')
-    donateModal.style.display="none"
+    donateModal.style.display= "none";
+    console.log("Button has been clicked");
 }
 
-document.addEventListener('DOMContentLoaded',function(){
-    let closeModal =document.getElementById('closeModal')
-    closeModal.addEventListener('click', closeModal);
-})
+document.addEventListener('DOMContentLoaded', function(){
+    let closeModalButton =document.getElementById('closeModal')
+    closeModalButton.addEventListener('click', closeModal);
+});
