@@ -148,6 +148,34 @@ header nav ul li a:hover{
     transition: 0.3s;
     color: #fff;
 }
+
+.submitButton{
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: var(--theme);
+    outline: none;
+    border: 0;
+    color:#fff;
+}
+.submitButton:hover{
+    background-color:;
+    color: #424242;
+    cursor:pointer;
+}
+
+.modal{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+
 #AbtUsSection .cards{
 display: flex;
 flex-wrap: wrap;
