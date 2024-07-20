@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function(){
 function closeModal(){
     donateModal.style.display= "none";
     console.log("Button has been clicked");
+    confirmationMessage.textContent = '';
 }
 
 
