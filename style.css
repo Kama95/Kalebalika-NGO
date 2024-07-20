@@ -150,12 +150,15 @@ header nav ul li a:hover{
 }
 
 .submitButton{
-    padding: 10px 20px;
+    padding: 10px;
     font-size: 1em;
     background-color: var(--theme);
     outline: none;
     border: 0;
     color:#fff;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 4px;
 }
 .submitButton:hover{
     background-color:;
@@ -196,8 +199,23 @@ header nav ul li a:hover{
     cursor: pointer;
 }
 
-.donationFormContainer{
-    
+#confirmationMessage{
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+.donationFormContainer h1{
+    margin-bottom: 20px;
+}
+.donationFormContainer label{
+    display: block;
+    margin-bottom: 5px;
+}
+.donationFormContainer input{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 #AbtUsSection .cards{
