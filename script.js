@@ -1,8 +1,8 @@
 console.log("JavaScript is working")
 
+ let donateModal =document.getElementById('donationModal')
   //function to display modal when button is clicked
 function displayDonateModal (){
- let donateModal = document.getElementById("donationModal")
  donateModal.style.display = "flex";
 }
 
@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function(){
 })
 
 function closeModal(){
-    let donateModal = document.getElementById('donationModal')
     donateModal.style.display= "none";
     console.log("Button has been clicked");
 }
@@ -22,4 +21,12 @@ function closeModal(){
 document.addEventListener('DOMContentLoaded', function(){
     let closeModalButton =document.getElementById('closeModal')
     closeModalButton.addEventListener('click', closeModal);
+});
+
+window.addEventListener('click', function(event){
+
+    if(event.target == donateModal){
+        closeModal();
+    };
+
 });
