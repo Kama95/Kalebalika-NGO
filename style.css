@@ -141,12 +141,7 @@ header nav ul li a:hover{
     font-size: 13px;
     border-radius: 3px;
     font-weight: 400;
-}
-
-.banner button a {
-    text-decoration: none;
-    transition: 0.3s;
-    color: #fff;
+    cursor: pointer;
 }
 
 .submitButton{
@@ -487,6 +482,7 @@ footer .newsLetterContainer input {
     .container{
         width: 100%;
         padding: 0 15px;
+}
 }
 @media screen and (max-width:1080px){
     .banner h1 {
