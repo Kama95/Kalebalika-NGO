@@ -11,10 +11,11 @@ function displayDonateModal (){
 
 
 //add event listener to button
-document.addEventListener('DOMContentLoaded', function(){
+/*document.addEventListener('DOMContentLoaded', function(){
     let donateButton=document.getElementById('donateButton');
     donateButton.addEventListener('click', displayDonateModal)   
-})
+})*/
+
 //function to close modalS
 function closeModal(){
     donateModal.style.display= "none";
