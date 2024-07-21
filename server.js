@@ -23,4 +23,21 @@ const donationSchema = new mongoose.Schema({
     date:{type:date, default: Date.now}
 });
 
-const Donation = mongoose.model('Donation', donationSchema)
+const Donation = mongoose.model('Donation', donationSchema);
+
+//routes
+
+app.post('/donate', async(req, res)=>{
+    const {name, email, amount} = req.body;
+    const donation = new Donation({name,email,amount});
+
+try{
+    await donation.save();
+    res.status(201).send(donation);
+  } catch (error) {
+    res.status(400).send(error);
+  }
+});
+app.listen(port, () => {
+    console.log(`Server running at http://localhost:${port}/`);
+  });
