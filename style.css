@@ -212,7 +212,7 @@ header nav ul li a:hover{
     border-radius: 4px;
 }
 
-        .donationType{
+        .dropdownS{
             appearance: none; /* Remove default arrow */
             -webkit-appearance: none;
             -moz-appearance: none;
@@ -231,8 +231,8 @@ header nav ul li a:hover{
             background-size: 17px 12px;
         }
 
-        .donationType:focus {
-            border-color: #007bff;
+        .dropdownS:focus {
+            border-color: var(--theme);
             outline: none;
         }
 
