@@ -178,11 +178,11 @@ header nav ul li a:hover{
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    width: 300px;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    width: 500px;
 }
 
 .closeButton{
