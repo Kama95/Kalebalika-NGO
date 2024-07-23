@@ -13,14 +13,14 @@ app.use(cors());
 
 //connect to MongoDB
 
-mongoose.connect('mongodb://localhost:127001/donations',{useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect('mongodb://localhost:27017/donations');
 
 const donationSchema = new mongoose.Schema({
 
     name:String,
     email:String,
     amount:Number,
-    date:{type:date, default: Date.now}
+    date:{type: Date, default: Date.now}
 });
 
 const Donation = mongoose.model('Donation', donationSchema);

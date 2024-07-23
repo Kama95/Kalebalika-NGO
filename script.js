@@ -36,7 +36,7 @@ function runOnStart() {
     });
     
     //handle form submission
-    donationForm.addEventListener('submit', function(event){
+    donationForm.addEventListener('submit', async function(event){
         event.preventDefault();
     
         //grab input values
@@ -46,13 +46,32 @@ function runOnStart() {
     
         //validate form
         if (donationAmount>0 && donorName && donorEmail){
-          confirmationMessage.textContent = `Thank you ${donorName} for your generous donation`;
+           try{
+            const response = await fetch('http://localhost:3000/donate',{
+                method:'POST',
+                headers:{
+                    'Content-Type':'application/json'
+                },
+                body: JSON.stringify({name:donorName, email:donorEmail, amount: donationAmount})
+            });
+            const data = await response.json();
+
+            if (response.ok)
+            {
+                confirmationMessage.textContent = `Thank you ${donorName} for your generous donation`;
           donationForm.reset();
     
         } else{
-            confirmationMessage.textContent=`Please fill in all content correctly`
-        }
-    })
+            confirmationMessage.textContent=`There was an issue processing your request. Please try again`;
+         }
+            }
+            catch(error){
+             confirmationMessage.textContent ='There was an issue processing your request. Please try again';
+            }
+           } else {
+            confirmationMessage = 'Please in our all details correctly'
+           }
+        })
 }
 if(document.readyState !== 'loading') {
 runOnStart();
