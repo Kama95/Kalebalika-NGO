@@ -212,6 +212,30 @@ header nav ul li a:hover{
     border-radius: 4px;
 }
 
+        .donationType{
+            appearance: none; /* Remove default arrow */
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 10px;
+            font-size: 16px;
+            color: #333;
+            width: 100%;
+            max-width: 300px;
+            box-sizing: border-box;
+            background-image: url('data:image/svg+xml;charset=US-ASCII,<svg%20xmlns="http://www.w3.org/2000/svg"%20viewBox="0%200%204%205"><path%20fill="none"%20stroke="currentColor"%20stroke-width="1.5"%20d="M1%201l2%202l2-2"/></svg>');
+            background-repeat: no-repeat;
+            background-position: right 30px center;
+            background-size: 17px 12px;
+        }
+
+        .donationType:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
 #AbtUsSection .cards{
 display: flex;
 flex-wrap: wrap;
