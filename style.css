@@ -183,6 +183,7 @@ header nav ul li a:hover{
     flex-direction: column;
     justify-content: space-around;
     width: 500px;
+    overflow: scroll;
 }
 
 .closeButton{

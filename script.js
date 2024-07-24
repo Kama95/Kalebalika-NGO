@@ -41,11 +41,16 @@ function runOnStart() {
     
         //grab input values
         const donationAmount = document.getElementById('donationAmount').value;
-        const donorName = document.getElementById('donorName').value;
+        const firstName = document.getElementById('firstName').value;
+        const lastName = document.getElementById('lastName').value;
         const donorEmail =document.getElementById('donorEmail').value;
+        const donationType = document.getElementById('donationType').value;
+        const methodOfPayment = document.getElementById('methodOfPayment').value;
+        
     
         //validate form
-        if (donationAmount>0 && donorName && donorEmail){
+        if (donationAmount>0 && firstName && lastName && 
+            donorEmail && donationType){
            try{
             const response = await fetch('http://localhost:3000/donate',{
                 method:'POST',
@@ -58,7 +63,7 @@ function runOnStart() {
 
             if (response.ok)
             {
-                confirmationMessage.textContent = `Thank you ${donorName} for your generous donation`;
+                confirmationMessage.textContent = `Thank you ${firstName} ${lastName} for your generous donation`;
           donationForm.reset();
     
         } else{
