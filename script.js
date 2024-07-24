@@ -57,7 +57,7 @@ function runOnStart() {
                 headers:{
                     'Content-Type':'application/json'
                 },
-                body: JSON.stringify({name:donorName, email:donorEmail, amount: donationAmount})
+                body: JSON.stringify({firstName:firstName, lastName:lastName, email:donorEmail, amount: donationAmount})
             });
             const data = await response.json();
 

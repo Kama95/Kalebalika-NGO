@@ -17,7 +17,8 @@ mongoose.connect('mongodb://localhost:27017/donations');
 
 const donationSchema = new mongoose.Schema({
 
-    name:String,
+    firstName:String,
+    lastName: String,
     email:String,
     amount:Number,
     date:{type: Date, default: Date.now}
