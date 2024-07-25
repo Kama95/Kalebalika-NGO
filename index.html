@@ -16,11 +16,11 @@
                 </div>
                 <nav>
                     <ul>
-                        <li> <a href="#HomeSection"> Home </a></li>
-                        <li> <a href="#AbtUsSection"> About Us </a></li>
-                        <li> <a href="#OurWorkSection"> Our Work</a></li>
-                        <li> <a href="#GallerySection"> Gallery </a></li>
-                        <li> <a href="#JoinUsSection"> Join Us</a></li>
+                        <li> <a href="#HomeSection">Home</a></li>
+                        <li> <a href="#AbtUsSection">About Us</a></li>
+                        <li> <a href="#OurWorkSection">Our Work</a></li>
+                        <li> <a href="#GallerySection">Gallery</a></li>
+                        <li> <a href="#JoinUsSection">Join Us</a></li>
                     </ul>
                 </nav>
             </div>
@@ -43,18 +43,18 @@
 
                 
                         <label for="donorName">Name:</label>
-                        <input type="input" id="firstName" name="firstName" name="firstName" placeholder="First Name">
+                        <input type="input" id="firstName" name="firstName" name="firstName" placeholder="First Name" required>
                         <input type="input" id="lastName" name="lastName" name="lastName" placeholder="Last Name" required>
                         
-                        <label for="email">Your Email:</label>
+                        <label for="donoremail">Your Email:</label>
                         <input type="email" id="donorEmail" class="email" name="email" required>
                         <label for="phoneNumber">Phone Number:</label>
-                        <input type="tel" id="phoneNumber" class="phoneNumber" name="phoneNumber" placeholder="##########">
+                        <input type="tel" id="phoneNumber" class="phoneNumber" name="phoneNumber" placeholder="##########" required>
                     
                       <label for="donationAmount">Donation Amount(ZMW):</label>
                      <input type="number" id="donationAmount" class="donationAmount" name="donationAmount" min="1" required>
                     
-                     <label for= "typeOfDonation" >Type Of Donation:</label>
+                     <label for= "donationType" >Type Of Donation:</label>
                      <select name="donationType" id="donationType" class="donationType dropdownS">
                             <option value="oneTimeDonation">One Time</option>
                             <option value="weeklyDonation">Weekly</option>
@@ -67,12 +67,41 @@
                             <option value="airtelMoney">Airtel Money</option>
                     </select>
 
-                    <button class="submitButton">Submit</button>
+                    <button type="submit" class="submitButton">Submit</button>
                 </form>
                 <div id="confirmationMessage" class="confirmationMessage"></div>
             </div>
         </div>
     </div>
+
+    <div class="modal" id="signUpModal"> 
+        <div class="modalContent">
+            <span class="closeButton" id="closeModal">&times;</span>
+            <div class="signUpFormContainer">
+                <h1>Sign Up for our volunteer program</h1>
+                <form id="signUpForm">
+
+                
+                        <label for="userName">Name:</label>
+                        <input type="input" id="userFirstName" name="userFirstName" placeholder="First Name" required>
+                        <input type="input" id="userLastName" name="userLastName" placeholder="Last Name" required>
+                        
+                        <label for="userEmail">Your Email:</label>
+                        <input type="userEmail" id="userEmail" class="email" name="email" placeholder="e.g johndoe@gmail.com" required>
+
+                        <label for="pwd">Password:</label>
+                        <input type="password" id="pwd" name="pwd" required>
+
+                        <label for="pwdConfirmation">Confirm Password:</label>
+                        <input type="password" id="pwdConfirmation" name="pwd" required>
+
+                    <button type="submit" class="submitButton">Submit</button>
+                </form>
+                <div id="confirmationMessage" class="confirmationMessage"></div>
+            </div>
+        </div>
+    </div>
+
     <section class="fullContainer" id="AbtUsSection">
         
         <div class="container">
