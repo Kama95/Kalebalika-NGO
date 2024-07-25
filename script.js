@@ -5,32 +5,40 @@ function runOnStart() {
     //global variables
      let donateModal =document.getElementById('donationModal');
      let donationForm = document.getElementById('donationForm');
+     let closeModalButton =document.getElementById('closeModal')
+     let donateButton=document.getElementById('donateButton');
      let confirmationMessage = document.getElementById('confirmationMessage')
-     let signUpModal = document.getElementById('userName')
-     let signUpForm = document. getElementById('signUpForm')
+     let signUpModal = document.getElementById('signUpModal')
+     let signUpForm = document.getElementById('signUpForm')
+     let signUpLink= document.getElementById('signUpLink')
+     let closeSignUpModal = document. getElementById('closeSignUpModal')
       
       //function to display modal when button is clicked
     function displayDonateModal (){
      donateModal.style.display = "flex";
     }
     
-    //add event listener to button
-        let donateButton=document.getElementById('donateButton');
+    //add event listener to donate button
+        
         donateButton.addEventListener('click', displayDonateModal)   
     
     //function to close modalS
     function closeModal(){
         donateModal.style.display= "none";
+        signUpModal.style.display= "none";
+
         console.log("Button has been clicked");
         confirmationMessage.textContent = '';
     }
     
-       let closeModalButton =document.getElementById('closeModal')
-        closeModalButton.addEventListener('click', closeModal);    
+      closeModalButton.addEventListener('click', ()=>{
+            closeModal();
+        });    
     //event listener so that modal closes when click happens anywhere outside the modal
     window.addEventListener('click', function(event){
-    if(event.target == donateModal){
+    if(event.target == donateModal || event.target == signUpModal){
             closeModal();
+            signUpModal.style.display= "none";
         };
     });
     
@@ -95,9 +103,24 @@ function runOnStart() {
         })
 
         //Sign Up Feature Implementention
+    
 
-        
-}
+             //Display sign up form
+        signUpLink.addEventListener('click', ()=>{
+               signUpModal.style.display ='flex';
+        })
+              //close sign up form
+        closeSignUpModal.addEventListener('click', ()=>{
+            console.log ('This "x" was clicked');
+            signUpModal.style.display= "none";
+        })
+
+
+
+
+
+
+    }
 if(document.readyState !== 'loading') {
 runOnStart();
 }

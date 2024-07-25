@@ -20,7 +20,7 @@
                         <li> <a href="#AbtUsSection">About Us</a></li>
                         <li> <a href="#OurWorkSection">Our Work</a></li>
                         <li> <a href="#GallerySection">Gallery</a></li>
-                        <li> <a href="#JoinUsSection">Join Us</a></li>
+                        <li> <a class="signUpLink" id="signUpLink">Join Us</a></li>
                     </ul>
                 </nav>
             </div>
@@ -76,7 +76,7 @@
 
     <div class="modal" id="signUpModal"> 
         <div class="modalContent">
-            <span class="closeButton" id="closeModal">&times;</span>
+            <span class="closeSignUpForm" id="closeSignUpModal">&times;</span>
             <div class="signUpFormContainer">
                 <h1>Sign Up for our volunteer program</h1>
                 <form id="signUpForm">
@@ -95,7 +95,7 @@
                         <label for="pwdConfirmation">Confirm Password:</label>
                         <input type="password" id="pwdConfirmation" name="pwd" required>
 
-                    <button type="submit" class="submitButton">Submit</button>
+                    <button type="submit" class="signUpButton">Submit</button>
                 </form>
                 <div id="confirmationMessage" class="confirmationMessage"></div>
             </div>

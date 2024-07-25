@@ -174,10 +174,6 @@ header nav ul li a:hover{
     align-items: center;  
 }
 
-#signUpModal{
-    display: flex;
-}
-
 .modalContent{
     background-color: #fff;
     padding: 20px;
@@ -190,7 +186,7 @@ header nav ul li a:hover{
     overflow: auto;
 }
 
-.closeButton{
+.closeButton, .closeSignUpForm{
     position: absolute;
     top: -5px;
     right: 5px;
