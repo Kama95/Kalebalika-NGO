@@ -115,6 +115,39 @@ function runOnStart() {
             signUpModal.style.display= "none";
         })
 
+        //Handle sign up Form inputs
+        signUpForm.addEventListener('submit', async function(event){
+            event.preventDefault();
+         const userFirstName = document.getElementById('userFirstName').value;
+         const userLastName = document.getElementById('userLastName').value;
+         const userEmail = document.getElementById('userEmail').value;
+         const password = document.getElementById('pwd').value;
+         const passwordConfirm = document.getElementById('pwdConfirmation').value;
+         let confirmationMessage = document.getElementById('SignUpConfirmationMessage');
+
+          //validate Form data
+
+          if( userFirstName && userLastName && userEmail && password == passwordConfirm){
+             confirmationMessage.textContent = 'You have signed up successfully';
+             signUpForm.reset();
+
+            console.log('all forms filled in');
+            console.log (confirmationMessage);
+          } else if (password!=passwordConfirm){
+            confirmationMessage.textContent='Passwords do not match';
+            password.textContent='';
+            passwordConfirm.textContent='';
+            console.log('Passwords do not match')
+          } else{
+            console.log('Please fill in all details correctly')
+          }
+
+
+        
+        
+        
+        
+        })
 
 
 
