@@ -128,11 +128,32 @@ function runOnStart() {
           //validate Form data
 
           if( userFirstName && userLastName && userEmail && password == passwordConfirm){
-             confirmationMessage.textContent = 'You have signed up successfully';
-             signUpForm.reset();
+              try{
+                const response = await fetch ('http://localhost:3000/signup', {
+                    method: 'POST',
+                    headers:{
+                        'Content-Type':'application/json'
+                    },
+                    body: JSON.stringify({
+                        firstName:userFirstName,
+                        lastName:userLastName,
+                        email:userEmail,
+                        password:password
 
-            console.log('all forms filled in');
-            console.log (confirmationMessage);
+                    })
+                });
+                 const data = await response.json();
+                 if (response.ok)
+                 {confirmationMessage.textContent = 'Sign up successful!';
+                    signUpForm.reset();
+                   }else {
+                    confirmationMessage.textContent ='There was an issue processing your request. Please try again';
+                   }
+              } catch(error){
+                confirmationMessage.textContent = 'There was an issue processing your request. Please try again'
+              }
+              
+            
           } else if (password!=passwordConfirm){
             confirmationMessage.textContent='Passwords do not match';
             password.textContent='';

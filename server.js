@@ -3,17 +3,20 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require ('cors');
 const { type } = require('os');
+//const userRoutes = require('./routes/UserRoute.js');
+
 
 const app = express();
-const port = 3000;
+const port = 3000 || process.env.PORT;
 
 //middleware
 app.use(bodyParser.json());
 app.use(cors());
+app.use(express.json());
 
 //connect to MongoDB
 
-mongoose.connect('mongodb://localhost:27017/donations');
+mongoose.connect('mongodb://localhost:27017/NGO');
 
 const donationSchema = new mongoose.Schema({
     firstName:String,
@@ -25,10 +28,7 @@ const donationSchema = new mongoose.Schema({
     amount:Number,
     date:{type: Date, default: Date.now}
 });
-
 const Donation = mongoose.model('Donation', donationSchema);
-
-app.use(express.json());
 
 //routes
 
@@ -46,6 +46,9 @@ app.post('/donate', async(req, res)=>{
     res.status(400).send({error:"Error saving donation"});
   }
 });
+
+//app.use('/signup', userRoutes);
+
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}/`);
   });
