@@ -139,7 +139,6 @@ function runOnStart() {
                         lastName:userLastName,
                         email:userEmail,
                         password:password
-
                     })
                 });
                  const data = await response.json();

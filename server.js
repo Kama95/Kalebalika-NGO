@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require ('cors');
 const { type } = require('os');
-//const userRoutes = require('./routes/UserRoute.js');
+const userRoutes = require('./routes/UserRoute.js');
 
 
 const app = express();
@@ -47,7 +47,7 @@ app.post('/donate', async(req, res)=>{
   }
 });
 
-//app.use('/signup', userRoutes);
+app.use('/signup', userRoutes);
 
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}/`);
